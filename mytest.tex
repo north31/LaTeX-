@@ -1,0 +1,53 @@
+\documentclass{article} 
+
+\usepackage{ctex} 
+\usepackage{amsmath}
+
+\newcommand\degree{^\circ} %采newcommand声明degree，^\circ 显示的是右上标的圈，即°
+\newtheorem{theorem}{定理}[section]
+\newtheorem{definition}{定义}[section]
+%\renewcommand{\thefootnote}{\roman{footnote}} %i, ii, iii 
+
+\title{\heiti 我的LaTeX练习01} 
+\author{\kaishu 董秦 2016210123} 
+\date{\today} 
+\begin{document} 
+	\maketitle
+	\begin{abstract}
+		文章为练习使用，是本人第一次用LaTeX写的，LaTeX还是需要多加练习才能掌握，希望之后可以熟练使用。
+	\end{abstract}
+    \tableofcontents
+    \newpage
+    \section{数学}
+    \subsection{勾股定理} %\footnote{Pythagoras，约公元前580年—约前500（490）年}
+    \subsubsection{语言描述}
+    \begin{theorem}
+    	{勾股定理}：直角三角形斜边的平方等于两腰的平方和。
+    \end{theorem}
+    \subsubsection{数学描述}
+    设直角三角形$ABC$，其中$\angle C=90\degree$, 则有：
+    \begin{equation} 
+    AC^2 = AB^2 + BC^2
+    \end{equation}
+    
+    \subsection{泰勒公式} %\footnote{Brook Taylor，1685年8月18日－1731年11月30日}
+    \subsubsection{语言描述}
+    \begin{definition}
+    	{泰勒公式}: 可以用若干项连加式来表示一个函数，这些相加的项由函数在某一点的导数求得。
+    \end{definition}
+    \subsubsection{数学描述}
+    \begin{gather}
+    f(x) = \frac{f(a)}{0!}+\frac{f(a)^\prime}{1!}(x-a)+\frac{f\prime\prime(a)}{2!}(x-a)^2+\cdots+\frac{f^n (a)}{n!}(x-a)^n+R_n(x)
+    \end{gather}
+    
+    \section{物理}
+    \subsection{质能方程} %\footnote{Albert Einstein，1879年3月14日—1955年4月18日}
+    \subsubsection{质能方程}
+    \begin{definition}	
+        {质能方程}即描述质量与能量之间的当量关系的方程。
+    \end{definition}
+    \subsubsection{数学描述}  
+     \begin{equation} 
+        E=mc^2 
+     \end{equation}
+\end{document}
